@@ -1,0 +1,103 @@
+body {
+  font: normal 16px Arial, sans-serif;
+  padding: 30px 0;
+}
+
+
+/*** Header ***/
+
+h1 {
+  margin: 200px auto 0 auto;
+  text-indent: -9999px;
+  background: url(../assets/header.svg) no-repeat center/100%;
+  height: 200px;
+  width: 400px;
+  display: inline-block;
+}
+
+/*** Body ***/
+
+main::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.balloon {
+  margin-left: 250px;
+  background: url(../assets/balloon.svg) no-repeat 0/200%;
+  width: 500px;
+  height: 1010px;
+  position: relative;
+  float: left;
+}
+
+.panel {
+  position: absolute;
+  top: 150px;
+  left: 140px;
+  width: 200px;
+}
+
+#btn-twitter {
+  position: absolute;
+  z-index: 2;
+  top: 400px;
+  left: 280px;
+  text-indent: -9999px;
+  background: transparent url(../assets/twitter.svg) no-repeat 0/200%;
+  height: 100px;
+  width: 200px;
+}
+
+#btn-twitter:hover {
+  background-position: -189px;
+  cursor: pointer;
+}
+
+#btn-twitter:hover ~ .balloon {
+  background-position: -489.52px;
+}
+
+#btn-generate {
+  display: block;
+  padding: 0;
+  margin-left: 825px;
+  background: transparent url(../assets/generate.svg) no-repeat -20px/350%;
+  font-size: 0;
+  height: 100px;
+  width: 250px;
+  border: 0;
+}
+
+#btn-generate:hover {
+  background-position: -312px;
+  cursor: pointer;
+}
+
+#btn-generate:active {
+  background-position: -606px;
+}
+
+#about {
+  margin-left: 800px;
+  margin-top: 200px;
+  display: block;
+  background: url(../assets/about.svg) no-repeat 0/200%;
+  width: 300px;
+  height: 300px;
+  text-indent: -9999px;
+}
+
+#about:hover {
+  cursor: pointer;
+  background-position: -295.5px;
+}
+
+/*** Footer ***/
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+  padding-bottom: 40px;
+}
