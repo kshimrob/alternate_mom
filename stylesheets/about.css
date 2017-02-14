@@ -1,0 +1,47 @@
+/*** About ***/
+
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#mom {
+  float: left;
+  margin-top: 75px;
+  background: url(../assets/mom.jpg) no-repeat -100px/250%;
+  height: 550px;
+  width: 400px;
+  text-indent: -9999px;
+}
+
+#mom:hover {
+  background-position: -588px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.about-text {
+  font-size: 0.9rem;
+  width: 400px;
+  line-height: 1.4rem;
+  display: inline-block;
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
+
+.about-text > p {
+  padding-bottom: 10px;
+}
+
+.about-text a {
+  font-weight: bold;
+  color: #EF5A54;
+}
+
+.footnote {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
