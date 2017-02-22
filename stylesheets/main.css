@@ -21,6 +21,13 @@ h1 {
 
 /*** Body ***/
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
 main::after {
   content: "";
   clear: both;
@@ -28,9 +35,10 @@ main::after {
 }
 
 .balloon {
-  margin-left: 250px;
-  background: url(../assets/balloon.svg) no-repeat 0/200%;
-  width: 500px;
+  margin-left: 150px;
+  margin-right: 50px;
+  background: url(../assets/balloon.svg) no-repeat -40px/250%;
+  width: 400px;
   height: 1010px;
   position: relative;
   float: left;
@@ -39,17 +47,17 @@ main::after {
 .panel {
   position: absolute;
   top: 150px;
-  left: 140px;
-  width: 200px;
+  left: 80px;
+  width: 250px;
 }
 
 #btn-twitter {
   position: absolute;
   z-index: 2;
-  top: 400px;
-  left: 280px;
+  top: 375px;
+  left: 150px;
   text-indent: -9999px;
-  background: transparent url(../assets/twitter.svg) no-repeat 0/200%;
+  background: transparent url(../assets/twitter.svg) no-repeat -2px/300%;
   height: 100px;
   width: 200px;
 }
@@ -60,13 +68,13 @@ main::after {
 }
 
 #btn-twitter:hover ~ .balloon {
-  background-position: -489.52px;
+  background-position: -529.515px;
 }
 
 #btn-generate {
   display: block;
   padding: 0;
-  margin-left: 825px;
+  margin-left: 675px;
   background: transparent url(../assets/generate.svg) no-repeat -20px/350%;
   font-size: 0;
   height: 100px;
@@ -84,10 +92,10 @@ main::after {
 }
 
 #about {
-  margin-left: 800px;
+  margin-left: 650px;
   margin-top: 200px;
   display: block;
-  background: url(../assets/about.svg) no-repeat 0/200%;
+  background: url(../assets/about.svg) no-repeat 0/300%;
   width: 300px;
   height: 300px;
   text-indent: -9999px;
@@ -95,7 +103,45 @@ main::after {
 
 #about:hover {
   cursor: pointer;
-  background-position: -295.5px;
+  background-position: -298.51px;
+}
+
+@media (max-width: 1004px) {
+  main {
+    max-width: 400px;
+  }
+
+  h1 {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+
+  }
+
+  .balloon {
+    float: none;
+    display: block;
+    margin: 100px auto 0 auto;
+  }
+
+  #btn-generate {
+    position: relative;
+    top: -1130px;
+    margin: 0 auto;
+  }
+
+  #btn-twitter {
+    top: 335px;
+    left: 15px;
+  }
+
+  #about {
+    margin: 0 auto;
+    position: absolute;
+    top: 925px;
+    left: 30px;
+    background-position: -593px;
+  }
 }
 
 /*** Footer ***/

@@ -1,6 +1,4 @@
 /*** About ***/
-
-
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -44,4 +42,30 @@ h1 {
 .footnote {
   font-size: 0.7rem;
   line-height: 1.2rem;
+}
+
+@media (max-width: 1004px) {
+  h1 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 855px) {
+  #mom {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .about-text {
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+  }
 }
