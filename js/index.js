@@ -5,8 +5,6 @@ $(document).ready(function() {
         var quotes = [
         "Men are like brooches. Your outfit looks amazing without one, but they are a nice accessory to have.",
         "If not then whatever.",
-        "Men are trash garbage.",
-        "He's an idiot.",
         "If it's meant to be, it's meant to be.",
         "Don't have kids before you are 30. Seriously.",
         "You're not even 30 yet!! Why the hell do you want to get married?",
@@ -29,7 +27,8 @@ $(document).ready(function() {
         "Don't forget to fall in love with yourself first.",
         "Be with a man you WANT to be with, not need to be with.",
         "You do not need a partner to feel worthy.",
-        "When in doubt, ALWAYS say what you want to your partner."
+        "When in doubt, ALWAYS say what you want to your partner.",
+        "You will hold yourself to a standard of grace, not perfection."
         ];
 
         //Click Event
